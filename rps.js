@@ -8,8 +8,7 @@
     }
        
     function playGame(){
-        // Play a single round of Rock Paper Scissors
-            
+        // Play a single round of Rock Paper Scissors    
         const playerSelection = prompt('Make your choice: rock, paper or scissors', '') ;
         const computerSelection = getCompuerChoice();
         console.log('You selected:', playerSelection);
@@ -32,7 +31,7 @@
         console.log(playRound(playerSelection, computerSelection));
     }   
     
-    //Play 5 round game and display winner
+    //Play 5 round games and display winner
     playGame();
     playGame();
     playGame();
