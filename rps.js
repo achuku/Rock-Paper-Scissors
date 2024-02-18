@@ -24,9 +24,7 @@
        }else if (   playerSelection === 'rock' && computerSelection === 'paper' ||
                     playerSelection === 'paper' && computerSelection === 'scissors' ||
                     playerSelection === 'scissors' && computerSelection === 'rock' ) {
-        return 'Computer Wins!';
-       }else {
-        return 'You Lose!';
+        return 'Computer Wins, You Lose!';
        }
     }   
     
