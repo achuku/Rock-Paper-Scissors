@@ -32,9 +32,9 @@
     }   
     
     //Play 5 round games and display winner
-    for (let i = 1; i <= 5; i++) {
+    /* for (let i = 1; i <= 5; i++) {
         playGame();
-    }
+    } */
     
         
     
