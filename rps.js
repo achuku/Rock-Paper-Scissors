@@ -35,6 +35,16 @@
     /* for (let i = 1; i <= 5; i++) {
         playGame();
     } */
+    const body = document.querySelector('body');
+    const btn1 = document.createElement('button');
+    btn1.textContent = 'rock';
+    body.appendChild(btn1);
+    const btn2 = document.createElement('button');
+    btn2.textContent = 'paper';
+    body.appendChild(btn2);
+    const btn3 = document.createElement('button');
+    btn3.textContent = 'scissors';
+    body.appendChild(btn3);
     
         
     
