@@ -9,7 +9,7 @@
        
     function playGame(){
         // Play a single round of Rock Paper Scissors    
-        const playerSelection = prompt('Make your choice: rock, paper or scissors', '') ;
+        //const playerSelection = prompt('Make your choice: rock, paper or scissors', '') ;
         const computerSelection = getCompuerChoice();
         console.log('You selected:', playerSelection);
         console.log('Computer selected:', computerSelection); 
@@ -45,6 +45,20 @@
     const btn3 = document.createElement('button');
     btn3.textContent = 'scissors';
     body.appendChild(btn3);
+
+
+    btn1.addEventListener('click', () => {
+        playerSelection = 'rock';
+        playGame();    
+    });
+    btn2.addEventListener('click', () => {
+        playerSelection = 'paper';
+        playGame();    
+    });
+    btn3.addEventListener('click', () => {
+        playerSelection = 'scissors';
+        playGame();    
+    });
     
         
     
