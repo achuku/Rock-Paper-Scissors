@@ -63,7 +63,7 @@
 
         function playRound(playerSelection, computerSelection){
             
-        if ( playerSelection === computerSelection ){
+            if ( playerSelection === computerSelection ){
             
             return div3.textContent = 'It\'s a tie!'; 
 
@@ -78,7 +78,7 @@
                         playerSelection === 'scissors' && computerSelection === 'rock' ) {
             return div3.textContent = 'Computer Scores!'; 
             
-        }
+            }
 
         }   
         
