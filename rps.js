@@ -25,6 +25,10 @@
     body.appendChild(div2);
     const div3 = document.createElement('div');
     body.appendChild(div3);
+    const div4 = document.createElement('div');
+    body.appendChild(div4);
+    const div5 = document.createElement('div');
+    body.appendChild(div5);
 
     
     //Player's Choice
@@ -51,27 +55,38 @@
     });
 
     
+    
     function playGame(){
         const computerSelection = getCompuerChoice();
         console.log('Computer selected:', computerSelection); 
         div2.textContent = `Computer selected: ${computerSelection}`;
 
         function playRound(playerSelection, computerSelection){
+            
         if ( playerSelection === computerSelection ){
+            
             return div3.textContent = 'It\'s a tie!'; 
+
+            
             }else if (  playerSelection === 'rock' && computerSelection === 'scissors' ||
                         playerSelection === 'paper' && computerSelection === 'rock' ||
                         playerSelection === 'scissors' && computerSelection === 'paper'  ){
-            return div3.textContent = 'Player Scores!';
-        }else if (   playerSelection === 'rock' && computerSelection === 'paper' ||
+            return div3.textContent = 'Player Scores!'; 
+        
+            }else if (  playerSelection === 'rock' && computerSelection === 'paper' ||
                         playerSelection === 'paper' && computerSelection === 'scissors' ||
                         playerSelection === 'scissors' && computerSelection === 'rock' ) {
-            return div3.textContent = 'Computer Scores!';
+            return div3.textContent = 'Computer Scores!'; 
+            
         }
+
         }   
         
         console.log(playRound(playerSelection, computerSelection));
     }   
+
+    
+     
      
     
         
