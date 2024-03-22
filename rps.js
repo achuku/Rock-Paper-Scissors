@@ -1,7 +1,7 @@
 
 // Generate a random choice for the computer
     function getCompuerChoice() {
-        const choices = ['rock','paper','scissors'];
+        const choices = ['Rock','Paper','Scissors'];
         const computerSelection = choices[Math.floor(Math.random() * choices.length)];
         return computerSelection;
 
@@ -10,13 +10,13 @@
     
     const body = document.querySelector('body');
     const btn1 = document.createElement('button');
-    btn1.textContent = 'rock';
+    btn1.textContent = 'Rock';
     body.appendChild(btn1);
     const btn2 = document.createElement('button');
-    btn2.textContent = 'paper';
+    btn2.textContent = 'Paper';
     body.appendChild(btn2);
     const btn3 = document.createElement('button');
-    btn3.textContent = 'scissors';
+    btn3.textContent = 'Scissors';
     body.appendChild(btn3);
 
     const div = document.createElement('div');
@@ -33,21 +33,21 @@
     
     //Player's Choice
     btn1.addEventListener('click', () => {
-        playerSelection = 'rock';
+        playerSelection = 'Rock';
         console.log('Player selected:', playerSelection);
         div.textContent = `Player selected: ${playerSelection}`;
         playGame();    
         
     });
     btn2.addEventListener('click', () => {
-        playerSelection = 'paper';
+        playerSelection = 'Paper';
         console.log('Player selected:', playerSelection); 
         div.textContent = `Player selected: ${playerSelection}`
         playGame();  
          
     });
     btn3.addEventListener('click', () => {
-        playerSelection = 'scissors';
+        playerSelection = 'Scissors';
         console.log('Player selected:', playerSelection);
         div.textContent = `Player selected: ${playerSelection}`
         playGame();    
@@ -68,14 +68,14 @@
             return div3.textContent = 'It\'s a tie!'; 
 
             
-            }else if (  playerSelection === 'rock' && computerSelection === 'scissors' ||
-                        playerSelection === 'paper' && computerSelection === 'rock' ||
-                        playerSelection === 'scissors' && computerSelection === 'paper'  ){
+            }else if (  playerSelection === 'Rock' && computerSelection === 'Scissors' ||
+                        playerSelection === 'Paper' && computerSelection === 'Rock' ||
+                        playerSelection === 'Scissors' && computerSelection === 'Paper'  ){
             return div3.textContent = 'Player Scores!'; 
         
-            }else if (  playerSelection === 'rock' && computerSelection === 'paper' ||
-                        playerSelection === 'paper' && computerSelection === 'scissors' ||
-                        playerSelection === 'scissors' && computerSelection === 'rock' ) {
+            }else if (  playerSelection === 'Rock' && computerSelection === 'Paper' ||
+                        playerSelection === 'Paper' && computerSelection === 'Scissors' ||
+                        playerSelection === 'Scissors' && computerSelection === 'Rock' ) {
             return div3.textContent = 'Computer Scores!'; 
             
             }
